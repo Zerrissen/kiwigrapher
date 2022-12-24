@@ -1,26 +1,20 @@
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
-from fake_useragent import UserAgent
 import matplotlib.pyplot as plt
+import pytermgui as ptg
 
-url = "https://www.asb.co.nz/iFrames/investmentPerformance.asp"
-header = {'User-Agent':str(UserAgent().random)}
-r = requests.get(url, headers=header)
+def main():
+    pass
 
-df_list = pd.read_html(r.text)
-df = df_list[2]
-df.rename(columns={'ASB KiwiSaver Scheme fund':'Scheme', 'Sell price':'Price'}, inplace=True)
+df = pd.read_csv('Kiwisaver Data.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+df = df.pivot_table(index='Date', columns='Scheme', values='Price').resample('D').mean()
 
-
-# show period over time
-
-
-
-# show fixed point in time
-plt.figure(1)
-for i in df.index:
-    plt.bar(df['Scheme'][i], df['Price'][i])
-plt.title('Fund Scheme vs Unit Price Today')
-plt.ylabel('Unit Price')
+plt.plot(df)
+plt.legend()
+plt.style.use('ggplot')
+plt.title('Kiwisaver Fund Unit Prices Over Time')
+plt.ylabel('Unit Price (NZD$)')
 plt.show()
+
+if __name__ == '__main__':
+    main()
