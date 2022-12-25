@@ -1,6 +1,6 @@
-# if pd.read_html does not work, we can use pd.read_html using requests.
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import matplotlib.pyplot as plt
 
@@ -10,12 +10,17 @@ r = requests.get(url, headers=header)
 
 df_list = pd.read_html(r.text)
 df = df_list[2]
-df.drop('Date', axis=1, inplace=True)
 df.rename(columns={'ASB KiwiSaver Scheme fund':'Scheme', 'Sell price':'Price'}, inplace=True)
 
+
+# show period over time
+
+
+
+# show fixed point in time
 plt.figure(1)
-plt.bar(df['Scheme'], df['Price'])
-plt.title('Costs per price')
-plt.ylabel('Cost per unit (NZD$)')
-plt.xlabel('ASB KiwiSaver Scheme')
+for i in df.index:
+    plt.bar(df['Scheme'][i], df['Price'][i])
+plt.title('Fund Scheme vs Unit Price Today')
+plt.ylabel('Unit Price')
 plt.show()
