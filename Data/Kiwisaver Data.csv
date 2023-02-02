@@ -17844,11 +17844,6 @@ Conservative Fund,1.6835,2017-07-08
 Growth Fund,1.7119,2017-07-08
 Moderate Fund,1.7234,2017-07-08
 NZ Cash Fund,1.4293,2017-07-08
-Balanced Fund,0.0,2017-07-09
-Conservative Fund,0.0,2017-07-09
-Growth Fund,0.0,2017-07-09
-Moderate Fund,0.0,2017-07-09
-NZ Cash Fund,0.0,2017-07-09
 Balanced Fund,1.7325,2017-07-10
 Conservative Fund,1.684,2017-07-10
 Growth Fund,1.7126,2017-07-10
@@ -18374,11 +18369,6 @@ Conservative Fund,1.7213,2017-10-22
 Growth Fund,1.8164,2017-10-22
 Moderate Fund,1.7864,2017-10-22
 NZ Cash Fund,1.4393,2017-10-22
-Balanced Fund,0.0,2017-10-23
-Conservative Fund,0.0,2017-10-23
-Growth Fund,0.0,2017-10-23
-Moderate Fund,0.0,2017-10-23
-NZ Cash Fund,0.0,2017-10-23
 Balanced Fund,1.8188,2017-10-24
 Conservative Fund,1.7215,2017-10-24
 Growth Fund,1.8164,2017-10-24
@@ -21574,7 +21564,6 @@ Conservative Fund,1.9112,2019-07-24
 Growth Fund,2.1322,2019-07-24
 Moderate Fund,2.0189,2019-07-24
 NZ Cash Fund,1.5,2019-07-24
-Positive Impact Fund,0.0,2019-07-24
 Balanced Fund,2.1021,2019-07-25
 Conservative Fund,1.9133,2019-07-25
 Growth Fund,2.1346,2019-07-25
@@ -22265,12 +22254,6 @@ Growth Fund,2.1839,2019-11-16
 Moderate Fund,2.0456,2019-11-16
 NZ Cash Fund,1.5083,2019-11-16
 Positive Impact Fund,0.9967,2019-11-16
-Balanced Fund,0.0,2019-11-17
-Conservative Fund,0.0,2019-11-17
-Growth Fund,0.0,2019-11-17
-Moderate Fund,0.0,2019-11-17
-NZ Cash Fund,0.0,2019-11-17
-Positive Impact Fund,0.0,2019-11-17
 Balanced Fund,2.1393,2019-11-18
 Conservative Fund,1.9315,2019-11-18
 Growth Fund,2.1837,2019-11-18
@@ -29075,3 +29058,165 @@ Growth Fund,2.3641,2022-12-25
 Moderate Fund,2.056,2022-12-25
 NZ Cash Fund,1.5732,2022-12-25
 Positive Impact Fund,1.0377,2022-12-25
+Balanced Fund,2.2474,2022-12-27
+Conservative Fund,1.9016,2022-12-27
+Growth Fund,2.3602,2022-12-27
+Moderate Fund,2.053,2022-12-27
+NZ Cash Fund,1.5735,2022-12-27
+Positive Impact Fund,1.0361,2022-12-27
+Balanced Fund,2.2332,2022-12-28
+Conservative Fund,1.8929,2022-12-28
+Growth Fund,2.3446,2022-12-28
+Moderate Fund,2.0423,2022-12-28
+NZ Cash Fund,1.5744,2022-12-28
+Positive Impact Fund,1.0361,2022-12-28
+Balanced Fund,2.2424,2022-12-29
+Conservative Fund,1.8959,2022-12-29
+Growth Fund,2.3564,2022-12-29
+Moderate Fund,2.0479,2022-12-29
+NZ Cash Fund,1.5746,2022-12-29
+Positive Impact Fund,1.0333,2022-12-29
+Balanced Fund,2.2396,2022-12-30
+Conservative Fund,1.8957,2022-12-30
+Growth Fund,2.3518,2022-12-30
+Moderate Fund,2.0464,2022-12-30
+NZ Cash Fund,1.5749,2022-12-30
+Positive Impact Fund,1.0323,2022-12-30
+Balanced Fund,2.2396,2022-12-31
+Conservative Fund,1.8957,2022-12-31
+Growth Fund,2.3518,2022-12-31
+Moderate Fund,2.0464,2022-12-31
+NZ Cash Fund,1.5749,2022-12-31
+Positive Impact Fund,1.0323,2022-12-31
+Balanced Fund,2.2396,2023-01-01
+Conservative Fund,1.8957,2023-01-01
+Growth Fund,2.3518,2023-01-01
+Moderate Fund,2.0464,2023-01-01
+NZ Cash Fund,1.5749,2023-01-01
+Positive Impact Fund,1.0323,2023-01-01
+Balanced Fund,2.2396,2023-01-02
+Conservative Fund,1.8957,2023-01-02
+Growth Fund,2.3518,2023-01-02
+Moderate Fund,2.0464,2023-01-02
+NZ Cash Fund,1.5749,2023-01-02
+Positive Impact Fund,1.0323,2023-01-02
+Balanced Fund,2.2396,2023-01-03
+Conservative Fund,1.8957,2023-01-03
+Growth Fund,2.3518,2023-01-03
+Moderate Fund,2.0464,2023-01-03
+NZ Cash Fund,1.5749,2023-01-03
+Positive Impact Fund,1.0323,2023-01-03
+Balanced Fund,2.2631,2023-01-05
+Conservative Fund,1.9095,2023-01-05
+Growth Fund,2.3799,2023-01-05
+Moderate Fund,2.0641,2023-01-05
+NZ Cash Fund,1.576,2023-01-05
+Positive Impact Fund,1.037,2023-01-05
+Balanced Fund,2.2735,2023-01-06
+Conservative Fund,1.9155,2023-01-06
+Growth Fund,2.3921,2023-01-06
+Moderate Fund,2.0721,2023-01-06
+NZ Cash Fund,1.5764,2023-01-06
+Positive Impact Fund,1.0367,2023-01-06
+Balanced Fund,2.2735,2023-01-07
+Conservative Fund,1.9155,2023-01-07
+Growth Fund,2.3921,2023-01-07
+Moderate Fund,2.0721,2023-01-07
+NZ Cash Fund,1.5764,2023-01-07
+Positive Impact Fund,1.0367,2023-01-07
+Balanced Fund,2.2735,2023-01-08
+Conservative Fund,1.9155,2023-01-08
+Growth Fund,2.3921,2023-01-08
+Moderate Fund,2.0721,2023-01-08
+NZ Cash Fund,1.5764,2023-01-08
+Positive Impact Fund,1.0367,2023-01-08
+Balanced Fund,2.2769,2023-01-09
+Conservative Fund,1.9193,2023-01-09
+Growth Fund,2.3955,2023-01-09
+Moderate Fund,2.0757,2023-01-09
+NZ Cash Fund,1.577,2023-01-09
+Positive Impact Fund,1.0456,2023-01-09
+Balanced Fund,2.2826,2023-01-10
+Conservative Fund,1.9205,2023-01-10
+Growth Fund,2.4029,2023-01-10
+Moderate Fund,2.0786,2023-01-10
+NZ Cash Fund,1.5772,2023-01-10
+Positive Impact Fund,1.0463,2023-01-10
+Balanced Fund,2.3055,2023-01-18
+Conservative Fund,1.9378,2023-01-18
+Growth Fund,2.4293,2023-01-18
+Moderate Fund,2.0995,2023-01-18
+NZ Cash Fund,1.579,2023-01-18
+Positive Impact Fund,1.0722,2023-01-18
+Balanced Fund,2.3091,2023-01-19
+Conservative Fund,1.9427,2023-01-19
+Growth Fund,2.4315,2023-01-19
+Moderate Fund,2.1035,2023-01-19
+NZ Cash Fund,1.5792,2023-01-19
+Positive Impact Fund,1.0663,2023-01-19
+Balanced Fund,2.3149,2023-01-20
+Conservative Fund,1.9407,2023-01-20
+Growth Fund,2.442,2023-01-20
+Moderate Fund,2.1051,2023-01-20
+NZ Cash Fund,1.5794,2023-01-20
+Positive Impact Fund,1.0622,2023-01-20
+Balanced Fund,2.3149,2023-01-21
+Conservative Fund,1.9407,2023-01-21
+Growth Fund,2.442,2023-01-21
+Moderate Fund,2.1051,2023-01-21
+NZ Cash Fund,1.5794,2023-01-21
+Positive Impact Fund,1.0622,2023-01-21
+Balanced Fund,2.3149,2023-01-22
+Conservative Fund,1.9407,2023-01-22
+Growth Fund,2.442,2023-01-22
+Moderate Fund,2.1051,2023-01-22
+NZ Cash Fund,1.5794,2023-01-22
+Positive Impact Fund,1.0622,2023-01-22
+Balanced Fund,2.3199,2023-01-23
+Conservative Fund,1.9412,2023-01-23
+Growth Fund,2.449,2023-01-23
+Moderate Fund,2.1075,2023-01-23
+NZ Cash Fund,1.5799,2023-01-23
+Positive Impact Fund,1.0668,2023-01-23
+Balanced Fund,2.3186,2023-01-24
+Conservative Fund,1.9402,2023-01-24
+Growth Fund,2.4482,2023-01-24
+Moderate Fund,2.1066,2023-01-24
+NZ Cash Fund,1.58,2023-01-24
+Positive Impact Fund,1.0657,2023-01-24
+Balanced Fund,2.3248,2023-01-25
+Conservative Fund,1.944,2023-01-25
+Growth Fund,2.4557,2023-01-25
+Moderate Fund,2.1114,2023-01-25
+NZ Cash Fund,1.5803,2023-01-25
+Positive Impact Fund,1.0627,2023-01-25
+Balanced Fund,2.3334,2023-01-26
+Conservative Fund,1.9469,2023-01-26
+Growth Fund,2.467,2023-01-26
+Moderate Fund,2.1166,2023-01-26
+NZ Cash Fund,1.5806,2023-01-26
+Positive Impact Fund,1.0683,2023-01-26
+Balanced Fund,2.335,2023-01-27
+Conservative Fund,1.9457,2023-01-27
+Growth Fund,2.4705,2023-01-27
+Moderate Fund,2.1168,2023-01-27
+NZ Cash Fund,1.5808,2023-01-27
+Positive Impact Fund,1.0681,2023-01-27
+Balanced Fund,2.335,2023-01-28
+Conservative Fund,1.9457,2023-01-28
+Growth Fund,2.4705,2023-01-28
+Moderate Fund,2.1168,2023-01-28
+NZ Cash Fund,1.5808,2023-01-28
+Positive Impact Fund,1.0681,2023-01-28
+Balanced Fund,2.335,2023-01-29
+Conservative Fund,1.9457,2023-01-29
+Growth Fund,2.4705,2023-01-29
+Moderate Fund,2.1168,2023-01-29
+NZ Cash Fund,1.5808,2023-01-29
+Positive Impact Fund,1.0681,2023-01-29
+Balanced Fund,2.3241,2023-01-30
+Conservative Fund,1.9415,2023-01-30
+Growth Fund,2.4563,2023-01-30
+Moderate Fund,2.1098,2023-01-30
+NZ Cash Fund,1.5814,2023-01-30
+Positive Impact Fund,1.0685,2023-01-30
