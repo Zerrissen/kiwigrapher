@@ -6,6 +6,9 @@ __pycache__/
 .vscode/
 *json
 
-# CSV files. MAKE THEM BUILD IT THEMSELVESSSS
-Data/
-*csv
+# Environment
+.env
+venv/
+
+# Old files
+.old/
