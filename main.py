@@ -36,25 +36,56 @@ def main():
     print(f'99\tExit Program  ')
     while True:
         try:
-            menuChoice = int(input('Please select a menu option (1-99): '))
+            menuChoice = int(input('\nPlease select a menu option (1-99): '))
         except ValueError:
             print('Error: Please enter a valid number.')
             continue
         break
     if menuChoice == 1:
-        Graph()
+        Graph(getType())
     elif menuChoice == 2:
         Update()
     elif menuChoice == 3:
         Verify()
     elif menuChoice == 4:
-        Sort()
+        Sort(getType())
     elif menuChoice == 5:
         Scrape()
     elif menuChoice == 99:
         exit(0)
 
+# ================================================
+#  *                  getType
+#  ? Allows the user to select between verified & unverified data
+#  ? Used to determine some functionality.
+#  @ param None
+#  @ return string
+# ================================================
 
+
+def getType():
+    print(f'\t\t1\tVerified Data')
+    print(f'\t\t2\tUnverified Data')
+    while True:
+        try:
+            typeChoice = int(
+                input('Please select a verification option (1-2): '))
+        except ValueError:
+            print('Error: Please enter a valid number.')
+            continue
+        if typeChoice == 1:
+            return 'verified'
+        elif typeChoice == 2:
+            print("Sorry, unfortunately, this option is currently not available.")
+            return None
+        else:
+            print('Error: Invalid choice. Returning to menu.')
+            return None
+
+
+# ===========================
+#        DRIVER CODE
+# ===========================
 if __name__ == '__main__':
     try:
         while True:

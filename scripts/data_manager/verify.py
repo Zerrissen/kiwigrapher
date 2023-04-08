@@ -6,9 +6,11 @@
 #  @description    : Verifier program to remove anomolous data.
 # ===========================================================================
 
-import math
+# import math
 
-from .. import UNVERIFIED_DIR, VERIFIED_DIR, os, pd
+# from .. import UNVERIFIED_DIR, VERIFIED_DIR, os, pd
+
+# TODO implement this by release 1.2.0
 
 
 class Verify:
@@ -17,7 +19,8 @@ class Verify:
 
 
 def verify():
-    print("Not working yet.")
+    print("Not working yet. Sorry!")
+    print("Expect this feature to be available by version.")
     # df = pd.read_csv(os.path.join(DATA_DIR, "Kiwisaver Data.csv"))
     # iterate through data and check for anomalies.
     # correct anomalies using the mean of the data from 3 days either side of the point.
