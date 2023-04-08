@@ -1,0 +1,14 @@
+# Pycache and compiled files
+__pycache__/
+*py[cod]
+
+# VSCode configurations
+.vscode/
+*json
+
+# Environment
+.env
+venv/
+
+# Old files
+.old/
