@@ -25,7 +25,7 @@ class InputHandler:
         while True:
             try:
                 choice = input(prompt).lower()
-                if choice in choices.lower():
+                if choice in [x.lower() for x in choices]:
                     return choice
                 else:
                     raise ValueError
@@ -46,6 +46,7 @@ class InputHandler:
                 self.ui.error("Error: Please enter a valid choice.")
 
     def get_data_status_input(self):
+        self.ui.printVerificationChoice()
         while True:
             try:
                 choice = int(
@@ -54,11 +55,11 @@ class InputHandler:
                 self.ui.error('Error: Please enter a valid number.')
                 continue
             if choice == 1:
-                return 'verified'
-            elif choice == 2:
                 self.ui.warning(
                     "Sorry, unfortunately, this option is currently not available.")
                 return None
+            elif choice == 2:
+                return 'unverified'
             else:
                 self.ui.error('Error: Invalid choice. Returning to menu.')
                 return None
