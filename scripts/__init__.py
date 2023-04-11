@@ -2,6 +2,7 @@ import datetime as dt
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+from colorama import Fore, Style, just_fix_windows_console, init
 
 # ======== CONSTANTS =========
 DELTA = dt.timedelta(days=1)

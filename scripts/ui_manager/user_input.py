@@ -1,0 +1,64 @@
+class InputHandler:
+    def __init__(self, ui_handler):
+        self.ui = ui_handler
+
+    def get_input(self, prompt):
+        return input(prompt)
+
+    def get_int_input(self, prompt):
+        while True:
+            try:
+                num = int(input(prompt))
+                return num
+            except ValueError:
+                self.ui.error("Error: Please enter a valid integer.")
+
+    def get_float_input(self, prompt):
+        while True:
+            try:
+                num = float(input(prompt))
+                return num
+            except ValueError:
+                self.ui.error("Error: Please enter a valid float.")
+
+    def get_choice_input(self, prompt, choices):
+        while True:
+            try:
+                choice = input(prompt).lower()
+                if choice in choices.lower():
+                    return choice
+                else:
+                    raise ValueError
+            except ValueError:
+                self.ui.error("Error: Please enter a valid choice.")
+
+    def get_yes_no_input(self, prompt):
+        while True:
+            try:
+                choice = input(prompt).lower()
+                if choice == "yes" or choice == "y":
+                    return True
+                elif choice == "no" or choice == "n":
+                    return False
+                else:
+                    raise ValueError
+            except ValueError:
+                self.ui.error("Error: Please enter a valid choice.")
+
+    def get_data_status_input(self):
+        while True:
+            try:
+                choice = int(
+                    input('Please select a verification option (1-2): '))
+            except ValueError:
+                self.ui.error('Error: Please enter a valid number.')
+                continue
+            if choice == 1:
+                return 'verified'
+            elif choice == 2:
+                self.ui.warning(
+                    "Sorry, unfortunately, this option is currently not available.")
+                return None
+            else:
+                self.ui.error('Error: Invalid choice. Returning to menu.')
+                return None
