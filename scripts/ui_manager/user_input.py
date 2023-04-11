@@ -26,6 +26,7 @@ class InputHandler:
             try:
                 choice = input(prompt).lower()
                 if choice in [x.lower() for x in choices]:
+                    print('-'*37)
                     return choice
                 else:
                     raise ValueError
@@ -50,7 +51,7 @@ class InputHandler:
         while True:
             try:
                 choice = int(
-                    input('Please select a verification option (1-2): '))
+                    input('\nPlease select a verification option (1-2): '))
             except ValueError:
                 self.ui.error('Error: Please enter a valid number.')
                 continue

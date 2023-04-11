@@ -26,16 +26,22 @@ class UIHandler:
             f"{Fore.WHITE}{Style.NORMAL}[{Fore.RED}-{Fore.WHITE}] " + message)
 
     def printMenu(self):
-        print('Kiwigrapher - ASB Kiwisaver Funds Grapher')
-        print('Version: 1.1.0\n')
-        print(f'1\tView Data\t\tDisplays line graph of all data')
-        print(f'2\tUpdate Existing Data\t\tUpdates existing data from last saved date')
+        print(f'{Style.BRIGHT}Kiwigrapher - ASB Kiwisaver Funds Grapher')
+        print(f'Version: {Style.NORMAL}{Fore.GREEN}1.1.0{Style.RESET_ALL}')
+        print('-'*14+'\n')
         print(
-            f'3\tVerify Existing Data\t\tChecks for anomolous/missing data and corrects it')
-        print(f'4\tSort Existing Data\t\tSplits existing data by Kiwisaver Fund')
-        print(f'5\tScrape New Data\t\tScrapes a full new set of data from ASB.')
-        print(f'99\tExit Program')
+            f'[1] {Style.BRIGHT}View Data{Style.NORMAL}{"Displays line graph of all data":>50}')
+        print(
+            f'[2] {Style.BRIGHT}Update Existing Data\t{Style.NORMAL}{"Updates existing data from last saved date":<50}')
+        print(
+            f'[3] {Style.BRIGHT}Verify Existing Data\t{Style.NORMAL}{"Checks for anomolous/missing data and corrects it":<50}')
+        print(
+            f'[4] {Style.BRIGHT}Sort Existing Data\t{Style.NORMAL}{"Splits existing data by Kiwisaver Fund":>46}')
+        print(
+            f'[5] {Style.BRIGHT}Scrape New Data\t{Style.NORMAL}{"Scrapes a full new set of data from ASB.":>48}')
+        print(f'[99] {Fore.YELLOW}Exit Program{Style.RESET_ALL}\n')
 
     def printVerificationChoice(self):
-        print(f'\t\t1\tVerified Data')
-        print(f'\t\t2\tUnverified Data')
+        print("\nDo you want to operate with verified or unverified data?")
+        print(f'\t[1] Verified Data')
+        print(f'\t[2] Unverified Data')
