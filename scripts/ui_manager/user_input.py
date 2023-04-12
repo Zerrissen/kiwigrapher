@@ -8,7 +8,7 @@ class InputHandler:
     def get_int_input(self, prompt):
         while True:
             try:
-                num = int(input(prompt))
+                num = int(input(self.ui.prompt(prompt)))
                 return num
             except ValueError:
                 self.ui.error("Error: Please enter a valid integer.")
@@ -16,7 +16,7 @@ class InputHandler:
     def get_float_input(self, prompt):
         while True:
             try:
-                num = float(input(prompt))
+                num = float(input(self.ui.prompt(prompt)))
                 return num
             except ValueError:
                 self.ui.error("Error: Please enter a valid float.")
@@ -24,7 +24,7 @@ class InputHandler:
     def get_choice_input(self, prompt, choices):
         while True:
             try:
-                choice = input(prompt).lower()
+                choice = input(self.ui.prompt(prompt)).lower()
                 if choice in [x.lower() for x in choices]:
                     print('-'*37)
                     return choice
@@ -36,7 +36,7 @@ class InputHandler:
     def get_yes_no_input(self, prompt):
         while True:
             try:
-                choice = input(prompt).lower()
+                choice = input(self.ui.prompt(prompt)).lower()
                 if choice == "yes" or choice == "y":
                     return True
                 elif choice == "no" or choice == "n":
@@ -51,7 +51,7 @@ class InputHandler:
         while True:
             try:
                 choice = int(
-                    input('\nPlease select a verification option (1-2): '))
+                    input(f'\n{self.ui.prompt("Please select a verification option(1-2): ")}'))
             except ValueError:
                 self.ui.error('Error: Please enter a valid number.')
                 continue

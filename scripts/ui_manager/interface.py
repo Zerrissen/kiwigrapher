@@ -19,11 +19,14 @@ class UIHandler:
 
     def plus(self, message):
         print(
-            f"{Fore.WHITE}{Style.NORMAL}[{Fore.GREEN}+{Fore.WHITE}] " + message)
+            f'{Fore.WHITE}{Style.NORMAL}[{Fore.GREEN}+{Fore.WHITE}] ' + message)
 
     def minus(self, message):
         print(
-            f"{Fore.WHITE}{Style.NORMAL}[{Fore.RED}-{Fore.WHITE}] " + message)
+            f'{Fore.WHITE}{Style.NORMAL}[{Fore.RED}-{Fore.WHITE}] ' + message)
+
+    def prompt(self, message):
+        return f'{Fore.BLUE}{Style.NORMAL}{message}{Style.RESET_ALL}'
 
     def printMenu(self):
         print(f'{Style.BRIGHT}Kiwigrapher - ASB Kiwisaver Funds Grapher')
@@ -43,5 +46,5 @@ class UIHandler:
 
     def printVerificationChoice(self):
         print("\nDo you want to operate with verified or unverified data?")
-        print(f'\t[1] Verified Data')
-        print(f'\t[2] Unverified Data')
+        print(f'\t[1] {Style.BRIGHT}Verified Data{Style.NORMAL}')
+        print(f'\t[2] {Style.BRIGHT}Unverified Data{Style.RESET_ALL}')
