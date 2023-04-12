@@ -21,6 +21,7 @@ from scripts.ui_manager import InputHandler
 
 ui = UIHandler()
 inp = InputHandler(ui)
+sort = Sort()
 
 # ================================================
 #                Define Functions
@@ -42,7 +43,7 @@ def main():
     elif menuChoice == "3":
         Verify()
     elif menuChoice == "4":
-        Sort(InputHandler(ui).get_data_status_input())
+        sort.sort(InputHandler(ui).get_data_status_input())
     elif menuChoice == "5":
         Scrape()
     elif menuChoice == "99":
@@ -57,5 +58,5 @@ if __name__ == '__main__':
         while True:
             main()
     except KeyboardInterrupt:
-        ui.error('Keyboard Interrupt (Ctrl+C) detected. Exiting...')
+        ui.error('\nKeyboard Interrupt (Ctrl+C) detected. Exiting...')
         exit(0)

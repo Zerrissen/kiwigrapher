@@ -52,6 +52,7 @@ class InputHandler:
             try:
                 choice = int(
                     input(f'\n{self.ui.prompt("Please select a verification option(1-2): ")}'))
+                print('\n')
             except ValueError:
                 self.ui.error('Error: Please enter a valid number.')
                 continue
