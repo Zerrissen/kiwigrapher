@@ -1,6 +1,6 @@
 # Kiwigrapher
 
-## An ASB Kiwisaver Scheme Grapher and Analysis tool.
+## An ASB Kiwisaver scheme grapher and analysis tool.
 
 ###### This tool is developed for educational and hobbyist purposes only. Not intended for commercial purposes. Use at your own risk.
 
