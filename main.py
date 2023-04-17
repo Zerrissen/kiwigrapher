@@ -3,17 +3,27 @@
 #  @author         : Nathan Hines
 #  @email          : nathan@hines.net.nz
 #  @repo           : https://github.com/zerrissen/kiwigrapher
-#  @description    : Main user UI, program entry point.
+#  @description    : Program entry point. Handles user input.
 # ===========================================================================
 
 # ================================================
 #                Define Imports
 # ================================================
 
-
+from os import system
+from time import sleep
 from scripts.data_manager import Scrape, Update, Verify, Sort
 from scripts.grapher import Graph
+from scripts.ui_manager import UIHandler
+from scripts.ui_manager import InputHandler
 
+# ================================================
+#                Define Constants
+# ================================================
+
+ui = UIHandler()
+inp = InputHandler(ui)
+sort = Sort()
 
 # ================================================
 #                Define Functions
@@ -21,66 +31,28 @@ from scripts.grapher import Graph
 
 
 def main():
-    print('Kiwigrapher - ASB Kiwisaver Funds Grapher')
-    print('Version: 1.1.0\n')
-
     # ===========================
     #  *        INFO
     #   Menu loop, user controlled
     # ===========================
-    print(f'1\tView Data\t\tDisplays line graph of all data')
-    print(f'2\tUpdate Existing Data\t\tUpdates existing data from last saved date')
-    print(f'3\tVerify Existing Data\t\tChecks for anomolous/missing data and corrects it')
-    print(f'4\tSort Existing Data\t\tSplits existing data by Kiwisaver Fund')
-    print(f'5\tScrape New Data\t\tScrapes a full new set of data from ASB.')
-    print(f'99\tExit Program  ')
-    while True:
-        try:
-            menuChoice = int(input('\nPlease select a menu option (1-99): '))
-        except ValueError:
-            print('Error: Please enter a valid number.')
-            continue
-        break
-    if menuChoice == 1:
-        Graph(getType())
-    elif menuChoice == 2:
+    ui.print_menu()
+    menuChoice = inp.get_choice_input(
+        "Please select a menu option (1-99): ", ["1", "2,", "3", "4", "5", "99"])
+    if menuChoice == "1":
+        Graph(InputHandler(ui).get_data_status_input())
+    elif menuChoice == "2":
         Update()
-    elif menuChoice == 3:
+    elif menuChoice == "3":
         Verify()
-    elif menuChoice == 4:
-        Sort(getType())
-    elif menuChoice == 5:
+    elif menuChoice == "4":
+        sort.sort(InputHandler(ui).get_data_status_input())
+    elif menuChoice == "5":
         Scrape()
-    elif menuChoice == 99:
+    elif menuChoice == "99":
+        ui.success("Closing program...")
+        ui.reset()
         exit(0)
-
-# ================================================
-#  *                  getType
-#  ? Allows the user to select between verified & unverified data
-#  ? Used to determine some functionality.
-#  @ param None
-#  @ return string
-# ================================================
-
-
-def getType():
-    print(f'\t\t1\tVerified Data')
-    print(f'\t\t2\tUnverified Data')
-    while True:
-        try:
-            typeChoice = int(
-                input('Please select a verification option (1-2): '))
-        except ValueError:
-            print('Error: Please enter a valid number.')
-            continue
-        if typeChoice == 1:
-            return 'verified'
-        elif typeChoice == 2:
-            print("Sorry, unfortunately, this option is currently not available.")
-            return None
-        else:
-            print('Error: Invalid choice. Returning to menu.')
-            return None
+    inp.get_continue_input("Press enter to continue.")
 
 
 # ===========================
@@ -88,8 +60,11 @@ def getType():
 # ===========================
 if __name__ == '__main__':
     try:
+        sleep(1)
         while True:
+            system('clear')
             main()
     except KeyboardInterrupt:
-        print('Keyboard Interrupt (Ctrl+C) detected. Exiting...')
+        ui.error('\nKeyboard Interrupt (Ctrl+C) detected. Exiting...')
+        ui.reset()
         exit(0)

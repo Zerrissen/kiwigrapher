@@ -4,11 +4,10 @@ __pycache__/
 
 # VSCode configurations
 .vscode/
-*json
 
 # Environment
 .env
-venv/
+.venv/
 
 # Old files
 .old/

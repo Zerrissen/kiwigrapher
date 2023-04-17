@@ -2,6 +2,9 @@ import datetime as dt
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+from random import randint
+from colorama import Fore, Style, just_fix_windows_console, init, AnsiToWin32
+from json import load
 
 # ======== CONSTANTS =========
 DELTA = dt.timedelta(days=1)
