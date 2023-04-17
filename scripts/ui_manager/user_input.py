@@ -5,6 +5,14 @@ class InputHandler:
     def get_input(self, prompt):
         return input(prompt)
 
+    def get_continue_input(self, prompt):
+        while True:
+            try:
+                choice = input(prompt)
+                return choice
+            except ValueError:
+                self.ui.error("Error: Invalid input.")
+
     def get_int_input(self, prompt):
         while True:
             try:
